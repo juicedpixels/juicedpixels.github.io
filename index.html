@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Juiced Pixels Consulting</title>
-  </head>
-  <body>
-    <main>
-        <h1>Juiced Pixels Consulting</h1>  
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juiced Pixels Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f4f4f4;
+    }
+    header img.logo {
+      width: 200px;
+      height: auto;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .about img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "\2705";
+      margin-right: 0.5em;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f4f4f4;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="imgs/logo.png" alt="Juiced Pixels Consulting Logo" />
+    <h1>Juiced Pixels Consulting</h1>
+  </header>
+  <main class="content">
+    <section class="about">
+      <img src="imgs/alister.jpg" alt="Alister Scott" />
+      <div>
+        <h2>Who I Am</h2>
+        <p>Alister Scott</p>
+      </div>
+    </section>
+    <section>
+      <h2>🔧 What I Bring to the Table</h2>
+      <ul>
+        <li>Expert in API, database, and headless browser testing</li>
+        <li>Build-from-scratch test automation frameworks (Playwright)</li>
+        <li>Maintain/convert existing ones (Selenium, Cypress, Puppeteer)</li>
+        <li>High-volume performance & load testing (k6)</li>
+        <li>Proven experience in test strategy & management across Agile, Iterative, and Waterfall</li>
+        <li>Deep knowledge of payroll software testing</li>
+        <li>Strong in test planning, execution & reporting</li>
+        <li>Skilled in defect triage & management (JIRA, Azure DevOps, GitHub)</li>
+        <li>DevOps/CI-CD pipeline experience (Bitbucket Pipelines, TeamCity, Azure DevOps, GitHub Actions)</li>
+        <li>Cross-functional Agile leadership & clear stakeholder communication</li>
+        <li>National Police Check ready & happy to complete any required probity checks</li>
+      </ul>
+    </section>
+    <section>
+      <h2>👀 What I’m Looking For</h2>
+      <ul>
+        <li>3+ month engagements</li>
+        <li>Brisbane CBD or surrounds (end-of-trip facilities a plus)</li>
+        <li>3–5 billable days per week</li>
+        <li>No travel</li>
+        <li>Rate: $1,200/day + GST (negotiable for longer engagements)</li>
+        <li>🚫 No mobile app testing roles, please</li>
+        <li>👨‍💻 View my work: <a href="https://alisterscott.github.io" target="_blank">alisterscott.github.io</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Juiced Pixels Consulting – Built with ❤️ in Brisbane
+  </footer>
+</body>
 </html>
