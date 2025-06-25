@@ -42,9 +42,90 @@
       list-style: none;
       padding: 0;
     }
+    li {
+      position: relative;
+      padding-left: 2em;
+      margin-bottom: 0.7em;
+      font-size: 1.08em;
+      line-height: 1.5;
+    }
     li::before {
-      content: "•";
-      margin-right: 0.5em;
+      position: absolute;
+      left: 0.2em;
+      top: 0.1em;
+      font-size: 1.2em;
+    }
+    li:has(> [href])::before {
+      content: "👨‍💻";
+      color: #007acc;
+    }
+    li:has(> [href*='no mobile app'])::before {
+      content: "🚫";
+      color: #d32f2f;
+    }
+    li:has(> [href*='View my work'])::before {
+      content: "👨‍💻";
+      color: #007acc;
+    }
+    li:has(> [href*='Rate'])::before {
+      content: "💲";
+      color: #388e3c;
+    }
+    li:has(> [href*='No travel'])::before {
+      content: "✈️";
+      color: #d32f2f;
+    }
+    li:has(> [href*='Brisbane'])::before {
+      content: "📍";
+      color: #1976d2;
+    }
+    li:has(> [href*='month engagements'])::before {
+      content: "📆";
+      color: #1976d2;
+    }
+    li:has(> [href*='billable days'])::before {
+      content: "🗓️";
+      color: #1976d2;
+    }
+    li:has(> [href*='Expert'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Build-from-scratch'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Maintain/convert'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='High-volume'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Proven experience'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Strong in test'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Skilled in defect'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='DevOps/CI-CD'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='Cross-functional'])::before {
+      content: "✅";
+      color: #388e3c;
+    }
+    li:has(> [href*='National Police'])::before {
+      content: "✅";
+      color: #388e3c;
     }
     footer {
       text-align: center;
@@ -94,7 +175,7 @@
         <li>✅ No travel</li>
         <li>✅ Rate: $1,200/day + GST (negotiable for longer engagements)</li>
         <li>🚫 No mobile app testing roles, please</li>
-        <li>👨‍💻 View my work: <a href="https://alisterscott.github.io" target="_blank">alisterscott.github.io</a></li>
+        <li>View my work: <a href="https://alisterscott.github.io" target="_blank">alisterscott.github.io</a></li>
       </ul>
     </section>
     <section>
