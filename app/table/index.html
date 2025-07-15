@@ -2,58 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WebDriverJs Demo Page</title>
+    <title>Juiced Pixels Demo Page</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        font-size: 18px;
+      }
+      body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8f9fa;
+        color: #222;
+      }
+      main {
+        max-width: 700px;
+        margin: 3rem auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        padding: 2rem;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        color: #007acc;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      }
+      thead tr {
+        background: #e3f2fd;
+      }
+      th, td {
+        padding: 1em;
+        text-align: left;
+        font-size: 1rem;
+      }
+      th {
+        font-weight: 700;
+        color: #007acc;
+        border-bottom: 2px solid #bbdefb;
+      }
+      tr:nth-child(even) {
+        background: #f4f8fb;
+      }
+      button {
+        background: #e3f2fd;
+        color: #007acc;
+        border: none;
+        border-radius: 6px;
+        padding: 0.5em 1.2em;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #bbdefb;
+      }
+    </style>
     <script src="scripts/script.js"></script>
 </head>
 <body>
-  <h2>Dynamic Data Table Example</h2>
-  <table>
-    <theader>
-      <tr>
-        <th>Name</th>
-        <th>Status</th>
-        <th>Actions</th>
-      </tr>
-    </theader>
-    <tbody>
-      <tr>
-        <td>Cactus</td>
-        <td>OPEN</td>
-        <td>
-          <div>
-            <button>CLICK ME</button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Succulent</td>
-        <td>CLOSED</td>
-        <td>
-          <div>
-            <button>CLICK ME</button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Aloe</td>
-        <td>OPEN</td>
-        <td>
-          <div>
-            <button>CLICK ME</button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Agave</td>
-        <td>OPEN</td>
-        <td>
-          <div>
-            <button>CLICK ME</button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <main>
+    <h2>Dynamic Data Table Example</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cactus</td>
+          <td>OPEN</td>
+          <td>
+            <div>
+              <button>CLICK ME</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Succulent</td>
+          <td>CLOSED</td>
+          <td>
+            <div>
+              <button>CLICK ME</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Aloe</td>
+          <td>OPEN</td>
+          <td>
+            <div>
+              <button>CLICK ME</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Agave</td>
+          <td>OPEN</td>
+          <td>
+            <div>
+              <button>CLICK ME</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 </body>
 </html>
