@@ -13,6 +13,6 @@ function loadRequest() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "https://my-json-server.typicode.com/webdriverjsdemo/webdriverjsdemo.github.io/posts", true);
+  xhttp.open("GET", "https://my-json-server.typicode.com/juicedpixels/juicedpixels.github.io/posts", true);
   xhttp.send();
 }
