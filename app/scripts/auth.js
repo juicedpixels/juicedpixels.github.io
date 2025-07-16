@@ -3,12 +3,12 @@ window.onload = () => {
   ok.addEventListener('click', () => {
     const firstname = document.getElementById('firstname').value
     const surname = document.getElementById('surname').value
-    document.cookie = `name=${firstname}${surname}`;
+    document.cookie = `name=${firstname} ${surname}`;
     window.location.reload();
   });
   if (document.cookie) {
     const welcome = document.getElementById('welcome');
-    welcome.textContent =  `Welcome ${document.cookie}`;
+    welcome.textContent =  `Welcome ${document.cookie.split('=')[1]}!`;
     const auth = document.getElementById("auth");
     auth.style.display = "none";
   }
