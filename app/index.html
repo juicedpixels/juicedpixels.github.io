@@ -5,28 +5,49 @@
     <title>Juiced Pixels Demo Page</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/common.css">
+    <link rel="stylesheet" href="common.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
   <main>
-    <h1>Juiced Pixels Demo Page</h1>
-    <h2>Child element appears after 2 seconds</h2>
-    <div id="elementappearsparent"></div>
-    <h2>Child element appears after page load</h2>
-    <div id="elementappearsafterpage"></div>
-    <h2>Child element disappears after 3 seconds</h2>
-    <div id="elementdisappears">Here one minute, then...</div>
-    <h2>Element changes text (from old to new) after 4 seconds</h2>
-    <div id="elementchangestext">old</div>
-    <h2>A bunch of elements with different text</h2>
-    <div id="textelements">
-      <span onclick="spanClicked('Rock')">Rock</span>
-      <span onclick="spanClicked('Paper')">Paper</span>
-      <span onclick="spanClicked('Scissors')">Scissors</span>
+    <h1 style="color:#007acc; font-weight:700; margin-bottom:2rem;">Juiced Pixels Demo Page</h1>
+    <div class="demo-section">
+      <h2>Child element appears after 2 seconds</h2>
+      <div id="elementappearsparent"></div>
     </div>
-    <h2>Result</h2>
-    <div id="result"></div>
+    <div class="demo-section">
+      <h2>Child element appears after page load</h2>
+      <div id="elementappearsafterpage"></div>
+    </div>
+    <div class="demo-section">
+      <h2>Child element disappears after 3 seconds</h2>
+      <div id="elementdisappears">Here one minute, then...</div>
+    </div>
+    <div class="demo-section">
+      <h2>Element changes text (from old to new) after 4 seconds</h2>
+      <div id="elementchangestext">old</div>
+    </div>
+    <div class="demo-section">
+      <h2>A bunch of elements with different text</h2>
+      <div id="textelements">
+        <button onclick="spanClicked('Rock')">Rock</button>
+        <button onclick="spanClicked('Paper')">Paper</button>
+        <button onclick="spanClicked('Scissors')">Scissors</button>
+      </div>
+    </div>
+    <div class="demo-section">
+      <h2>Result</h2>
+      <div id="result"></div>
+    </div>
+    <h2 style="text-align:center; margin-top:3em;">Demo Pages</h2>
+    <ul class="demo-links">
+      <li><a href="auth/index.html">Auth Demo</a></li>
+      <li><a href="dynamic/index.html">Dynamic Demo</a></li>
+      <li><a href="error/index.html">Error Demo</a></li>
+      <li><a href="expand/index.html">Expand Demo</a></li>
+      <li><a href="leave/index.html">Leave Demo</a></li>
+      <li><a href="table/index.html">Table Demo</a></li>
+    </ul>
   </main>
 </body>
 </html>
